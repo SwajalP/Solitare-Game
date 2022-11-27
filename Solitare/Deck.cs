@@ -50,7 +50,6 @@
             }
             size = cards.Count();
         }
-
         public Card deal()
         {
             if (isEmpty())
@@ -60,40 +59,6 @@
             size--;
             Card c = cards[size];
             return c;
-        }
-        public String toString()
-        {
-            String rtn = "size = " + size + "\nUndealt cards: \n";
-
-            for (int k = size - 1; k >= 0; k--)
-            {
-                rtn = rtn + cards[k];
-                if (k != 0)
-                {
-                    rtn = rtn + ", ";
-                }
-                if ((size - k) % 2 == 0)
-                {
-                    rtn = rtn + "\n";
-                }
-            }
-
-            rtn = rtn + "\nDealt cards: \n";
-            for (int k = cards.Count() - 1; k >= size; k--)
-            {
-                rtn = rtn + cards[k];
-                if (k != size)
-                {
-                    rtn = rtn + ", ";
-                }
-                if ((k - cards.Count()) % 2 == 0)
-                {
-                    rtn = rtn + "\n";
-                }
-            }
-
-            rtn = rtn + "\n";
-            return rtn;
         }
     }
 
