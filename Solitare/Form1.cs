@@ -1,8 +1,5 @@
-using DocumentFormat.OpenXml.Drawing.Charts;
-using DocumentFormat.OpenXml.Office2010.Drawing;
 using System.Collections.Generic;
 using System.Media;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Solitare
 {
